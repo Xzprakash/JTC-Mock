@@ -6,9 +6,32 @@ class Test
   public static void methodOne(int... i) { System.out.println("var-arg method"); }
 
   public static void main(String[] args) {
-     methodOne();//var-arg method
-     methodOne(10,20);//var-arg method
-     methodOne(10);//general method
+     methodOne();
+     methodOne(10,20);
+     methodOne(10);
   }
 }
+
+#Error:
+class Test
+ {
+  public static void methodOne(int... i) { System.out.println("var-arg method"); }
+
+  public static void main(String[] args) {
+     methodOne(new in[] {10,20})
+  }
+}
+
+#Error:
+class Test
+{
+ public void methodOne(int[] i){}
+ public void methodOne(int... i){}
+}
+
+#Error:
+class Test
+ {
+  public synchronized final strictfp void main(String[] args) { }
+ }
 
