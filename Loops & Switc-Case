@@ -1,0 +1,46 @@
+#Output:
+int x = 10;
+switch(x)
+{
+ case 10:
+ System.out.println("10");
+ case 20:
+ System.out.println("20");
+ break;
+}
+
+#Output:
+int x = 20;
+switch(x)
+{
+ case 10:
+ System.out.println("10");
+ case 20:
+ System.out.println("20");
+ break;
+}
+
+int x = 11;
+switch(x)
+{
+ default:
+ System.out.println("default");
+ case 10:
+ System.out.println("10");
+ break;
+ case 20:
+ System.out.println("20");
+}
+
+int x = 11;
+switch(x)
+{
+ case 10:
+ System.out.println("10");
+ break;
+ case 20:
+ System.out.println("20");
+ break;
+ default:
+ System.out.println("default");
+}
