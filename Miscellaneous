@@ -26,3 +26,21 @@ class B extends A
  synchronized double d;
  transient int i;
  volatile v;
+
+#Error:
+byte b1 = 10;
+byte b2 = 20;
+byte b3 = b2 + b1; 
+Explain ?
+
+byte b1 = 10
+b1 = b1 + 1;
+b1 = b1++;
+Explain?
+
+#Output:
+System.out.println(10/0);
+System.out.println(0/0);
+System.out.println(10/0.0);
+System.out.println(-10/0.0);
+System.out.println(0/0.0);
