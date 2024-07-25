@@ -2,7 +2,7 @@
 
 # Maximum allowed array size in java?
 
-# Find Error: int[][][] a=new int[3][][5];
+# Find Error: int[][][] a=new int[3][][5]; //edited.....
 
 # Output: {{},{}}
   int[][] a=new int[2][];
