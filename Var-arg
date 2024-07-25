@@ -8,7 +8,7 @@ class Test
   public static void main(String[] args) {
      methodOne();
      methodOne(10,20);
-     methodOne(10);
+     methodOne(10); //Edited............
   }
 }
 
