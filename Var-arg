@@ -1,23 +1,6 @@
 #Error:
 class Test
  {
-  public static void methodOne(int... i) { System.out.println("var-arg method"); }
-
-  public static void main(String[] args) {
-     methodOne(new in[] {10,20}); o/p:- var-arg method
-  }
-}
-
-#Error:
-class Test
-{
- public void methodOne(int[] i){}     o/p:- duplicate type of method
- public void methodOne(int... i){}
-}
-
-#Error:
-class Test
- {
-  public synchronized final strictfp void main(String[] args) { }
+  public synchronized final strictfp void main(String[] args) { } $No Error$ 
  }
 
