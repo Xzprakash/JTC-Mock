@@ -3,7 +3,7 @@ int x = 10;
 switch(x)
 {
  case 10:
- System.out.println("10");
+ System.out.println("10");  o/p:- 10
  case 20:
  System.out.println("20");
  break;
@@ -15,7 +15,7 @@ switch(x)
 {
  case 10:
  System.out.println("10");
- case 20:
+ case 20:                     o/p:- 20
  System.out.println("20");
  break;
 }
@@ -25,7 +25,7 @@ switch(x)
 {
  default:
  System.out.println("default");
- case 10:
+ case 10:                         o/p:- default
  System.out.println("10");
  break;
  case 20:
@@ -37,7 +37,7 @@ switch(x)
 {
  case 10:
  System.out.println("10");
- break;
+ break;                      o/p:- 20
  case 20:
  System.out.println("20");
  break;
