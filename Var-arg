@@ -1,20 +1,3 @@
-#Output:
-class Test
- {
-  public static void methodOne(int i) { System.out.println("general method"); }
-
-  public static void methodOne(int... i) { System.out.println("var-arg method"); }
-
-  public static void main(String[] args) {
-     methodOne();
-     methodOne(10,20);
-     methodOne(10); //Edited............o/p:-var-arg method
-                                             var-arg method
-                                             general method
-
-  }
-}
-
 #Error:
 class Test
  {
