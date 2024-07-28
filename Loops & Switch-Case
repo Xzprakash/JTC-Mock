@@ -14,7 +14,7 @@ switch(x)
 {
  default:
  System.out.println("default");
- case 10:                         o/p:- default $default 10 fall-through$
+ case 10:                         o/p:- default $default 10  reason: fall-through$
  System.out.println("10");
  break;
  case 20:
