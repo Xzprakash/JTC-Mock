@@ -1,46 +1,6 @@
 #Error:
-package pack1;
-public class A
- {
-  protected void methodOne(){
-  System.out.println("methodOne is executed");
- }
-}
-
-package pack2;
-class B extends A
- {
-  public static void main(String args[]){
-  A a=new A();
-  a.methodOne();//we cant call protected constructor outside the class.
-  B b=new B();
-  b.methodOne();
-  A a1=new B(); //valid
-  a1.methodOne(); //invalid
- }
-}
-
-#Error:
- synchronized class A { }  // 
+ synchronized class A { }  // $synchronized keyword is used with only methods and blocks$
  synchronized method1() { } //valid
  synchronized double d; // we cannot synchronize variable in java.
  transient int i;  // valid    
  volatile v;   //it can be used with variable
-
-#Error:
-byte b1 = 10;
-byte b2 = 20;
-byte b3 = b2 + b1; // error will occur as possible lossy conversion,in order to get output we have to type cast b2+b1;.
-Explain ?
-
-byte b1 = 10
-b1 = b1 + 1; //error will occur as possible lossy conversion,in order to get output we have to type cast b1+1;
-b1 = b1++;  // in case of increment typecasting is done internally
-Explain?
-
-#Output:
-System.out.println(10/0); //ArithmaticException
-System.out.println(0/0);  //ArithmaticExceeption
-System.out.println(10/0.0); //infinity
-System.out.println(-10/0.0); //-infinity
-System.out.println(0/0.0); // Not a number
