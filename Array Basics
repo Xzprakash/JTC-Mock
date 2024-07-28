@@ -14,23 +14,23 @@ $$ int[][][] a = {{{10,20,30},{40,50}},{{60},{70,80},{90,100,110}}}; =>
 
 # Find Error :
   int[] a=new int[10];
-  a[0]=97;
-  a[1]='a';
-  byte b=10; a[2]=b;
-  a[4]=10l;
+  a[0]=97; $no error
+  a[1]='a'; $no error
+  byte b=10; a[2]=b; $no error
+  a[4]=10l; $Type mismatch: cannot convert from long to int$
 
 # Find Error : 
-  Object[] a=new Object[10];
-  a[0]=new Integer(10); //ArrayIndexOutOf Bound Exception
-  a[1]=new Object();
-  a[2]=new String("bhaskar");
+  Object[] a=new Object[10]; $no error
+  a[0]=new Integer(10); //ArrayIndexOutOf Bound Exception $No error$
+  a[1]=new Object(); $no error
+  a[2]=new String("bhaskar"); $no error
 
 #Find Error : 
- Runnable[] r = new Thread[10];
+ Runnable[] r = new Thread[10]; $No Error$
 
 #Find Exception : IMPORTANT
  B[] b = new B[10];
- A[] a = b; (b is null).
+ A[] a = b; (b is null). $B is not null B[] is an array of type B, with dimension 10.. Error is Type mismatch: cannot convert from B to A
  a[0] = new B();
  a[0] = new A();
  Explain?
