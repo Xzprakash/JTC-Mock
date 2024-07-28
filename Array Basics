@@ -34,5 +34,10 @@ $$ int[][][] a = {{{10,20,30},{40,50}},{{60},{70,80},{90,100,110}}}; =>
  a[0] = new B();
  a[0] = new A();
  Explain?
+$Key point: suppose class B extends A :
+ then a[0] = new B(); //No error
+ but  a[0] = new B(); //java.lang.ArrayStoreException
+ Which signifies an array reference with a type can be assigned with an array of its sub-type. Object[] o = new String[3];
+ Howerver, we can add object of it's subtype, as arrays type is not widened by JVM, it is fixed. o = new Object(); //java.lang.ArrayStoreException 
  
   
