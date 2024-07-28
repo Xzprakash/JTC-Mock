@@ -1,28 +1,9 @@
 # Find Exception : int[] a=new int[-3]; // ArrayIndexOutOfBoundException
 
-# Maximum allowed array size in java?//2,147,483,647 
-
-# Find Error: int[][][] a=new int[3][][5]; //cannot specify an array dimenssion after empty dimenssion.
-
-# Output: {{},{}}
-  int[][] a=new int[2][];
-  System.out.println(a); //[[I@1c4af82c
-  System.out.println(a[0]);  //null
-  System.out.println(a[0][0]); //java.lang.NullPointerException: Cannot load from int array because "a[0]" is null.
-
-# int[] a=new int[4]; //o/p:- System.out.println(a[0]); ..> 10
-  a[0]=10;           //o/p:-  System.out.println(a[4]); ..>java.lang.ArrayIndexOutOfBoundsException: Index 4 out of bounds for length4
-  a[4]=50;
-
 # Represent the int[][][] a = {{{10,20,30},{40,50}},{{60},{70,80},{90,100,110}}}; array as :
   int [][] a = {{3,2}, {4}} =>  |a|
                               /     \       o/p:-4
                             |3|2|   |4|
-
-# Find arr.length()
-  int[][] a=new int[6][3];
-  System.out.println(a.length);      //o/p:- 6
-  System.out.println(a[0].length);   // o/p:- 3
 
 # Find Error :
   int[] a=new int[10];
