@@ -3,7 +3,7 @@ int x = 10;
 switch(x)
 {
  case 10:
- System.out.println("10");  o/p:- 10 $10 20 as fall-through occurs : it leads to executions of all the cases utill we break a case, so break statement is neccessary after every case$
+ System.out.println("10");  o/p:- 10 $10 20 as fall-through occurs : it leads to execution of all the cases utill we break a case, so break statement is neccessary after every case$
  case 20:
  System.out.println("20");
  break;
